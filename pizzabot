@@ -1,0 +1,8 @@
+#!/bin/bash
+
+DIR=venv/bin/activate
+
+if [ -f $DIR ]; then
+  source $DIR
+fi
+python -m bot.run "$1"
